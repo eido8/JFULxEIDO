@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:rgb(89, 255, 168);
+    background-color:rgb(244, 183, 69);
 }
 
 body.body-about {
@@ -23,7 +23,7 @@ nav {
     top: 0;
     position: sticky;
     overflow: hidden;
-    background-color: rgb(89, 255, 168);
+    background-color:rgb(244, 183, 69);
     z-index: 1000;
 }
 
@@ -163,7 +163,7 @@ nav a:hover {
 }
 
 .section-about h1 {
-    color: rgb(89, 255, 168);
+    color: rgb(244, 183, 69);
     margin-top: 10vh;
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
@@ -228,7 +228,7 @@ nav a:hover {
 }
 
 .section-browse h1 {
-    color: white;
+    color: rgb(244, 183, 69);
     margin-top: 10vh;
     margin-bottom: 0;
     font-size: 80px;
@@ -264,7 +264,7 @@ h3.instructions, h1.instructions {
 }
 
 .section-pricing {
-    background-color:rgb(89, 255, 168);
+    background-color:rgb(244, 183, 69);;
 }
 
 .section-pricing h1, h2, h3, h5 {
@@ -339,7 +339,7 @@ h3.instructions, h1.instructions {
 
 .section-pricing a.paypal-icon:hover {
     font-size: 80px;
-    color: rgb(89, 255, 168);
+    color: rgb(244, 183, 69);;
 }
 
 .row {
@@ -373,7 +373,7 @@ h3.instructions, h1.instructions {
 }
 
 .column-1 h1.price-tag, .column-2 h1.price-tag, .column-3 h1.price-tag {
-    color: rgb(89, 255, 168);
+    color: rgb(244, 183, 69);;
     text-decoration: underline;
     margin: 0;
 }
@@ -399,15 +399,15 @@ h3.instructions, h1.instructions {
 }
 
 .column-1:hover {
-    border: 2px solid rgb(89, 255, 168);
+    border: 2px solid rgb(244, 183, 69);;
 }
 
 .column-2:hover {
-    border: 2px solid rgb(89, 255, 168);
+    border: 2px solid rgb(244, 183, 69);;
 }
 
 .column-3:hover {
-    border: 2px solid rgb(89, 255, 168);
+    border: 2px solid rgb(244, 183, 69);;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
@@ -420,7 +420,7 @@ h3.instructions, h1.instructions {
 /* CONTACT ME SECTION */
 
 .section-home div.contact-info {
-    background-color: rgb(89, 255, 168);
+    background-color:rgb(244, 183, 69);
 }
 
 .section-home h1.reach-out-on {
@@ -459,7 +459,7 @@ div.social-media-icons {
 }
 
 div.social-media-icons a {
-    color:rgb(89, 255, 168);
+    color:rgb(244, 183, 69);
     letter-spacing: 10px;
     transition: 0.3s;
 }
