@@ -242,7 +242,7 @@ nav a:hover {
 
 .section-pricing h1.instructions {
     color: white;
-    font-size: 30px;
+    font-size: 80px;
     
 }
 
@@ -309,9 +309,10 @@ nav a:hover {
     /* letter-spacing: 2px; */
 }
 
-.column-1, .column-2, .column-3 h3 {
+.column-1 h3, .column-2 h3, .column-3 h3 {
     color: rgb(255,255,255,0.7);
     font-family: 'Dosis', sans-serif;
+    text-align: left;
 }
   
   /* Clear floats after the columns */
