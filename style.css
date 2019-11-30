@@ -23,7 +23,7 @@ nav {
     top: 0;
     position: sticky;
     overflow: hidden;
-    background-color:rgb(89, 255, 168);
+    background-color: rgb(89, 255, 168);
     z-index: 1000;
 }
 
@@ -38,6 +38,12 @@ nav h1 {
     margin-left: 50px;
     letter-spacing: 7px;
     font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 nav ul {
@@ -71,18 +77,41 @@ nav a:hover {
 
 /* HOME TAB */
 
+.intro-message {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.intro-description {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.intro-browse {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
 .section-home h1 {
-    color: white;
+    color: black;
     letter-spacing: 5px;
     font-size: 160px;
     font-family: 'Bebas Neue', cursive;
     margin-top: 14vh;
     margin-bottom: 0;
-    transition: 0.3s ease-in-out;
 }
 
 .section-home h1, h3, h5 {
     text-align: center;
+}
+
+.section-home h1, h5 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .section-home h5 {
@@ -108,14 +137,30 @@ nav a:hover {
     font-weight: bold;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    border: 1px solid black;
 }
 
 .section-home h3 a:hover {
     color: white;
+    border: 1px solid white;
     font-weight: bold;
 }
 
 /* ABOUT TAB */
+
+.about-jful, .bio, .donate-text {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.section-about h1, h3.bio {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 .section-about h1 {
     color: white;
@@ -123,7 +168,6 @@ nav a:hover {
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    pointer-events: none;
 }
 
 .section-about h3.bio {
@@ -136,11 +180,11 @@ nav a:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     letter-spacing: 2px;
-    pointer-events: none;
 }
 
 .section-about a.donate {
     text-decoration: none;
+    opacity: 0;
 }
 
 .section-about a.donate h3 {
@@ -169,6 +213,20 @@ nav a:hover {
 
 /* BROWSE TAB */
 
+.jful-x-eido-collection, .browse-thru, .browse-note {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.section-browse h1, h3 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .section-browse h1 {
     color: white;
     margin-top: 10vh;
@@ -176,7 +234,6 @@ nav a:hover {
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    pointer-events: none;
 }
 
 .section-browse h3 {
@@ -189,7 +246,6 @@ nav a:hover {
     font-weight: lighter;
     letter-spacing: 2px;
     width: 40vw;
-    pointer-events: none;
 }
 
 .player {
@@ -202,8 +258,22 @@ nav a:hover {
 
 /* PRICING TAB */
 
+h3.instructions, h1.instructions {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
 .section-pricing {
     background-color:rgb(89, 255, 168);
+}
+
+.section-pricing h1, h2, h3, h5 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .section-pricing h1 {
@@ -216,7 +286,8 @@ nav a:hover {
 .section-pricing h1.pricing-information {
     margin-top: 10vh;
     margin-bottom: 0vh;
-
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .section-pricing h3.purchase-note {
@@ -229,6 +300,8 @@ nav a:hover {
     font-weight: lighter;
     letter-spacing: 2px;
     width: 40vw;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .section-pricing div.instructions-and-chart {
@@ -243,7 +316,6 @@ nav a:hover {
 .section-pricing h1.instructions {
     color: white;
     font-size: 80px;
-    
 }
 
 .section-pricing div.instructions-and-chart h3.instructions {
@@ -261,6 +333,8 @@ nav a:hover {
     font-size: 80px;
     color: white;
     transition: 0.2s ease-in-out;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .section-pricing a.paypal-icon:hover {
@@ -273,6 +347,8 @@ nav a:hover {
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 .column-1, .column-2, .column-3 {
@@ -343,10 +419,24 @@ nav a:hover {
 
 /* CONTACT ME SECTION */
 
+.section-home div.contact-info {
+    background-color: rgb(89, 255, 168);
+}
+
+.section-home h1.reach-out-on {
+    color: black;
+}
+
+.section-home div.social-media-icons a {
+    color: black;
+}
+
 div.contact-info {
     background-color: black;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
 }
 
 h1.reach-out-on {
@@ -355,6 +445,12 @@ h1.reach-out-on {
     letter-spacing: 5px;
     font-weight: lighter;
     color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 div.social-media-icons {
