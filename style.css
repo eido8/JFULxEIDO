@@ -361,21 +361,66 @@ body.body-home nav a:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.player .iframe-container {
+.iframe-container {
     display: inline-block;
     border: 5px solid black;
     border-radius: 30px;
-    margin: 10px;
     transition: 0.2s ease-in-out;
     overflow: hidden;
-    padding-bottom: 4vh;
 }
 
-.player .iframe-container:hover {
+.iframe-container:hover {
     border-color: rgb(216, 194, 158);
 }
 
-.player .add-to-cart, .player .view-cart {
+#meant-to-be-container {
+    display: block;
+    margin: 0;
+}
+
+#meant-to-be-overlay {
+    display: none;
+}
+
+
+.iframe-overlay {
+    color: black;
+    margin: 0;
+    background-color: rgb(216, 194, 158);
+    width: 300px;
+    height: 380px;
+}
+
+/* Plans */
+.iframe-overlay a h3 {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.2s ease-in-out;
+}
+
+.track-title, .review-pricing {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.track-title {
+    padding-top: 3vh;
+}
+
+.iframe-overlay a h3:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+.add-to-cart, .view-cart {
     display: inline-block;
     background-color: rgb(216, 194, 158);
     width: 60px;
@@ -388,15 +433,17 @@ body.body-home nav a:hover {
 }
 
 .iframe-buttons {
-    margin-top: 5vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
-.player .iframe-container h3 {
-    margin: 10px;
+.player .iframe-container a {
+    margin-right: 25px;
+    margin-left: 25px;
     transition: 0.2s ease-in-out;
 }
 
-.player .iframe-container h3:hover {
+.add-to-cart:hover, .view-cart:hover {
     color: white;
     background-color: black;
     border-color: white;
@@ -418,7 +465,6 @@ body.body-home nav a:hover {
     color: white;
     border-color: white;
 }
-
 
 
 
@@ -607,16 +653,11 @@ h3.instructions, h1.instructions {
 
 /* CHECKOUT */
 
-.section-checkout {
-    color: white;
-}
-
 .section-checkout h1 {
     padding-top: 5vh;
     padding-bottom: 5vh;
     color: rgb(216, 194, 158);
     margin: 0;
-    margin-bottom: 0;
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
@@ -626,14 +667,14 @@ h3.instructions, h1.instructions {
     overflow: hidden;
     border: 3px solid rgb(216, 194, 158);
     border-radius: 30px;
-    width: 40vw;
     margin-top: 5vh;
+    width: 40vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-.cart h3 {
+.cart .shopping-cart-items-and-icon {
     padding: 20px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -644,9 +685,79 @@ h3.instructions, h1.instructions {
 }
 
 .cart ul {
+    background-color: rgb(216, 194, 158);
+    margin: 0;
+    padding-left: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     list-style: none;
+    text-align: left;
+    /* border: 1px solid green; */
 }
 
+.cart ul .added-item {
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart li {
+    border: 1px solid red;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    
+}
+
+.item-div-left {
+    float: left;
+}
+
+.item-div-left .item-name {
+    margin-left: 1vw;
+}
+
+.item-div-right {
+    float: right;
+}
+
+.item-div-right * {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.item-div-right i {
+    color: black;
+}
+
+.view-track, .item-div-right i {
+    border: 1px solid red;
+}
+
+.cart .checkout-button {
+    text-decoration: none
+}
+
+.cart .checkout-button h3 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.cart .checkout-button h3:hover {
+    background-color: rgb(216, 194, 158);
+    border-color: rgb(216, 194, 158);
+    color: black;
+}
 
 
 
@@ -705,6 +816,7 @@ div.contact-info {
 h1.reach-out-on {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    text-align: center;
     letter-spacing: 5px;
     font-weight: lighter;
     color: white;
