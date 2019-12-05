@@ -1,3 +1,11 @@
+/* COLOR PALETTE: 
+1. rgb(200, 205, 177), black, white 
+
+
+
+*/
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(216, 194, 158);
+    background-color: rgb(200, 205, 177);
 }
 
 .body-about, .body-browse, .body-pricing, .body-checkout {
@@ -24,7 +32,7 @@ nav {
     top: 0;
     position: sticky;
     overflow: hidden;
-    background-color:rgb(216, 194, 158);
+    background-color:rgb(200, 205, 177);
     z-index: 1000;
 }
 
@@ -66,12 +74,12 @@ nav ul * {
 
 /* Changes nav content color on hover */
 .body-about nav a:hover, .body-browse nav a:hover, .body-pricing nav a:hover, .body-checkout nav a:hover, .body-about nav a:hover i, .body-browse nav a:hover i, .body-pricing nav a:hover i {
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
 }
 
 /* Keeps the color of nav content of current page */
 .body-about a.nav-about, .body-browse a.nav-browse, .body-pricing a.nav-pricing, .body-checkout a.nav-checkout, .body-checkout i {
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
 }
 
 body.body-home nav a:hover i {
@@ -232,7 +240,7 @@ body.body-home nav a:hover {
 }
 
 .section-about h1 {
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
     margin-top: 10vh;
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
@@ -312,6 +320,10 @@ body.body-home nav a:hover {
     transition: 0.5s ease-in-out;
 }
 
+.section-browse {
+    background-color: rgb(200, 205, 177);
+}
+
 .section-browse h1, h3 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -322,16 +334,16 @@ body.body-home nav a:hover {
 }
 
 .section-browse h1 {
-    color: rgb(216, 194, 158);
-    margin-top: 10vh;
-    margin-bottom: 0;
+    color: black;
+    padding-top: 10vh;
+    margin: 0;
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
 }
 
 .section-browse h3.browse-thru {
-    color: white;
+    color: black;
     font-size: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -363,30 +375,33 @@ body.body-home nav a:hover {
 
 .iframe-container {
     display: inline-block;
-    border: 5px solid black;
+    border: 5px solid rgb(200, 205, 177);
     border-radius: 30px;
     transition: 0.2s ease-in-out;
     overflow: hidden;
+    margin: 1vw;
 }
 
 .iframe-container:hover {
-    border-color: rgb(216, 194, 158);
+    border-color: black;
 }
 
-#meant-to-be-container {
+/* SONGS */
+
+#meant-to-be-container, #you-want-container, #city-sounds-container {
     display: block;
     margin: 0;
 }
 
-#meant-to-be-overlay {
+#meant-to-be-overlay, #you-want-overlay, #city-sounds-overlay {
     display: none;
 }
 
 
 .iframe-overlay {
-    color: black;
+    color: rgb(200, 205, 177);
     margin: 0;
-    background-color: rgb(216, 194, 158);
+    background-color: black;
     width: 300px;
     height: 380px;
 }
@@ -397,10 +412,13 @@ body.body-home nav a:hover {
     padding-bottom: 2vh;
     margin-right: 3vh;
     margin-left: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     background-color: black;
     color: white;
     letter-spacing: 2px;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .track-title, .review-pricing {
@@ -410,7 +428,10 @@ body.body-home nav a:hover {
 }
 
 .track-title {
-    padding-top: 3vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: rgb(200, 205, 177);
+    background-color: black;
 }
 
 .iframe-overlay a h3:hover {
@@ -418,11 +439,18 @@ body.body-home nav a:hover {
     color: black;
 }
 
+.iframe-overlay h5 {
+    color: white;
+    transition: 0.2s ease-in-out;
+}
 
+.iframe-overlay h5:hover {
+    color: rgb(200, 205, 177);
+}
 
 .add-to-cart, .view-cart {
     display: inline-block;
-    background-color: rgb(216, 194, 158);
+    background-color: rgb(200, 205, 177);
     width: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -430,6 +458,7 @@ body.body-home nav a:hover {
     border: 1px solid black;
     border-radius: 20px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .iframe-buttons {
@@ -493,7 +522,7 @@ h3.instructions, h1.instructions {
 }
 
 .section-pricing {
-    background-color:rgb(216, 194, 158);
+    background-color:rgb(200, 205, 177);
 }
 
 .section-pricing h1, h2, h3, h5 {
@@ -523,7 +552,7 @@ h3.instructions, h1.instructions {
 }
 
 .section-pricing h1.instructions {
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
     font-size: 80px;
 }
 
@@ -546,7 +575,7 @@ h3.instructions, h1.instructions {
 
 .section-pricing a.paypal-icon:hover {
     font-size: 80px;
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
 }
 
 .row {
@@ -580,7 +609,7 @@ h3.instructions, h1.instructions {
 }
 
 .column-1 h1.price-tag, .column-2 h1.price-tag, .column-3 h1.price-tag {
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
     text-decoration: underline;
     margin: 0;
 }
@@ -597,7 +626,21 @@ h3.instructions, h1.instructions {
     font-family: 'Dosis', sans-serif;
     text-align: left;
 }
-  
+
+.exclusive-note {
+    color: rgb(200, 205, 177);
+    font-family: 'Dosis', sans-serif;
+    width: 50vw;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-browse .exclusive-note {
+    color: black;
+    padding-bottom: 4vh;
+}
+
   /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -606,15 +649,15 @@ h3.instructions, h1.instructions {
 }
 
 .column-1:hover {
-    border: 3px solid rgb(216, 194, 158);
+    border: 3px solid rgb(200, 205, 177);
 }
 
 .column-2:hover {
-    border: 3px solid rgb(216, 194, 158);
+    border: 3px solid rgb(200, 205, 177);
 }
 
 .column-3:hover {
-    border: 3px solid rgb(216, 194, 158);
+    border: 3px solid rgb(200, 205, 177);
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
@@ -656,7 +699,7 @@ h3.instructions, h1.instructions {
 .section-checkout h1 {
     padding-top: 5vh;
     padding-bottom: 5vh;
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
     margin: 0;
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
@@ -665,7 +708,7 @@ h3.instructions, h1.instructions {
 
 .cart {
     overflow: hidden;
-    border: 3px solid rgb(216, 194, 158);
+    border: 3px solid rgb(200, 205, 177);
     border-radius: 30px;
     margin-top: 5vh;
     width: 40vw;
@@ -681,18 +724,18 @@ h3.instructions, h1.instructions {
     font-size: 12px;
     letter-spacing: 5px;
     font-weight: lighter;
-    color: rgb(216, 194, 158);
+    color: rgb(200, 205, 177);
 }
 
 .cart ul {
-    background-color: rgb(216, 194, 158);
+    background-color: rgb(200, 205, 177);
     margin: 0;
     padding-left: 0;
     padding-top: 2vh;
     padding-bottom: 2vh;
     list-style: none;
     text-align: left;
-    /* border: 1px solid green; */
+    /* border: 1px solid rgb(200, 205, 177); */
 }
 
 .cart ul .added-item {
@@ -754,8 +797,8 @@ h3.instructions, h1.instructions {
 }
 
 .cart .checkout-button h3:hover {
-    background-color: rgb(216, 194, 158);
-    border-color: rgb(216, 194, 158);
+    background-color: rgb(200, 205, 177);
+    border-color: rgb(200, 205, 177);
     color: black;
 }
 
@@ -786,7 +829,7 @@ h3.instructions, h1.instructions {
 /* CONTACT ME SECTION */
 
 .section-home div.contact-info {
-    background-color:rgb(216, 194, 158);
+    background-color:rgb(200, 205, 177);
 }
 
 .section-home h1.reach-out-on {
@@ -806,7 +849,7 @@ div.contact-info {
 
 .body-home .contact-info {
     padding-top: 5vh;
-    background-color: rgb(216, 194, 158);
+    background-color: rgb(200, 205, 177);
 }
 
 .body-home .contact-info a, .body-home .reach-out-on {
@@ -834,7 +877,7 @@ div.social-media-icons {
 }
 
 div.social-media-icons a {
-    color:rgb(216, 194, 158);
+    color:rgb(200, 205, 177);
     letter-spacing: 10px;
     transition: 0.3s;
 }
