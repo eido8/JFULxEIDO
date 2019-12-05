@@ -309,7 +309,6 @@ body.body-home nav a:hover {
 /* BROWSE TAB */
 
 .jful-x-eido-collection, .browse-thru, .browse-note {
-    
     transition: 0.5s ease-in-out;
 }
 
@@ -331,7 +330,7 @@ body.body-home nav a:hover {
     text-align: center;
 }
 
-.section-browse h3 {
+.section-browse h3.browse-thru {
     color: white;
     font-size: 12px;
     margin-left: auto;
@@ -341,6 +340,7 @@ body.body-home nav a:hover {
     font-weight: lighter;
     letter-spacing: 2px;
     width: 40vw;
+    margin-top: 5vh;
 }
 
 .body-home .section-browse h3 {
@@ -355,24 +355,70 @@ body.body-home nav a:hover {
     /* width: 40vw; */
     width: 80vw;
     margin-top: 5vh;
-    /* border: 1px solid red; */
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.player iframe {
+.player .iframe-container {
     display: inline-block;
     border: 5px solid black;
     border-radius: 30px;
     margin: 10px;
     transition: 0.2s ease-in-out;
+    overflow: hidden;
+    padding-bottom: 4vh;
 }
 
-.player iframe:hover {
+.player .iframe-container:hover {
     border-color: rgb(216, 194, 158);
 }
+
+.player .add-to-cart, .player .view-cart {
+    display: inline-block;
+    background-color: rgb(216, 194, 158);
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.iframe-buttons {
+    margin-top: 5vh;
+}
+
+.player .iframe-container h3 {
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.player .iframe-container h3:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.player .iframe-container a {
+    color: black;
+}
+
+.body-home .browse-thru a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.body-home .browse-thru a:hover {
+    color: white;
+    border-color: white;
+}
+
 
 
 
