@@ -1,5 +1,5 @@
 /* COLOR PALETTE: 
-1. rgb(200, 205, 177), black, white 
+1. rgb(225, 208, 195), black, white 
 
 
 
@@ -13,7 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(200, 205, 177);
+    background-color: rgb(225, 208, 195);
 }
 
 .body-about, .body-browse, .body-pricing, .body-checkout {
@@ -32,7 +32,7 @@ nav {
     top: 0;
     position: sticky;
     overflow: hidden;
-    background-color:rgb(200, 205, 177);
+    background-color:rgb(225, 208, 195);
     z-index: 1000;
 }
 
@@ -74,12 +74,12 @@ nav ul * {
 
 /* Changes nav content color on hover */
 .body-about nav a:hover, .body-browse nav a:hover, .body-pricing nav a:hover, .body-checkout nav a:hover, .body-about nav a:hover i, .body-browse nav a:hover i, .body-pricing nav a:hover i {
-    color: rgb(200, 205, 177);
+    color: rgb(225, 208, 195);
 }
 
 /* Keeps the color of nav content of current page */
 .body-about a.nav-about, .body-browse a.nav-browse, .body-pricing a.nav-pricing, .body-checkout a.nav-checkout, .body-checkout i {
-    color: rgb(200, 205, 177);
+    color: rgb(225, 208, 195);
 }
 
 body.body-home nav a:hover i {
@@ -240,7 +240,7 @@ body.body-home nav a:hover {
 }
 
 .section-about h1 {
-    color: rgb(200, 205, 177);
+    color: rgb(225, 208, 195);
     margin-top: 10vh;
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
@@ -316,12 +316,12 @@ body.body-home nav a:hover {
 
 /* BROWSE TAB */
 
-.jful-x-eido-collection, .browse-thru, .browse-note {
+.full-collection, .browse-thru, .browse-note {
     transition: 0.5s ease-in-out;
 }
 
 .section-browse {
-    background-color: rgb(200, 205, 177);
+    background-color: rgb(225, 208, 195);
 }
 
 .section-browse h1, h3 {
@@ -370,116 +370,20 @@ body.body-home nav a:hover {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .iframe-container {
     display: inline-block;
-    border: 5px solid rgb(200, 205, 177);
+    border: 5px solid black;
     border-radius: 30px;
+    background-color: black;
     transition: 0.2s ease-in-out;
     overflow: hidden;
     margin: 1vw;
 }
 
 .iframe-container:hover {
-    border-color: black;
-}
-
-/* SONGS */
-
-#meant-to-be-container, #you-want-container, #city-sounds-container {
-    display: block;
-    margin: 0;
-}
-
-#meant-to-be-overlay, #you-want-overlay, #city-sounds-overlay {
-    display: none;
-}
-
-
-.iframe-overlay {
-    color: rgb(200, 205, 177);
-    margin: 0;
-    background-color: black;
-    width: 300px;
-    height: 380px;
-}
-
-/* Plans */
-.iframe-overlay a h3 {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    margin-right: 3vh;
-    margin-left: 3vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    background-color: black;
-    color: white;
-    letter-spacing: 2px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.track-title, .review-pricing {
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 2px;
-    margin: 0;
-}
-
-.track-title {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    color: rgb(200, 205, 177);
-    background-color: black;
-}
-
-.iframe-overlay a h3:hover {
-    background-color: white;
-    color: black;
-}
-
-.iframe-overlay h5 {
-    color: white;
-    transition: 0.2s ease-in-out;
-}
-
-.iframe-overlay h5:hover {
-    color: rgb(200, 205, 177);
-}
-
-.add-to-cart, .view-cart {
-    display: inline-block;
-    background-color: rgb(200, 205, 177);
-    width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 20px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.iframe-buttons {
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-}
-
-.player .iframe-container a {
-    margin-right: 25px;
-    margin-left: 25px;
-    transition: 0.2s ease-in-out;
-}
-
-.add-to-cart:hover, .view-cart:hover {
-    color: white;
-    background-color: black;
     border-color: white;
-}
-
-.player .iframe-container a {
-    color: black;
 }
 
 .body-home .browse-thru a {
@@ -495,6 +399,148 @@ body.body-home nav a:hover {
     border-color: white;
 }
 
+.section-browse .purchase-instruction-container {
+    background-color: black;
+}
+
+.section-browse .purchase-instruction-container h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h3.form {
+    margin-top: 10vh;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.section-browse .instructions {
+    color: rgb(225, 208, 195);
+}
+
+.section-browse .purchase-steps {
+    text-align: center;
+}
+
+.section-browse div.step-container {
+    display: inline-block;
+    width: 340px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.section-browse .purchase-steps h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1vh;
+}
+
+.section-browse .purchase-steps h3,.section-browse .purchase-steps p {
+    color: rgb(225, 208, 195);
+    margin: 0;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    font-family: 'Dosis', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* when screen size is phone size */
+@media screen and (max-width:   1000px) {
+
+    .section-browse .purchase-steps p {
+      width: 30vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+@media screen and (max-width:   600px) {
+
+    .section-browse .purchase-steps p {
+      width: 70vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+.review-pricing {
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.review-pricing:hover {
+    color: rgb(225, 208, 195);
+}
+
+.place-an-order a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+div.place-an-order {
+    border: 2px solid rgb(225, 208, 195);
+    border-radius: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.place-an-order h1 {
+    padding: 0;
+    margin: 0;
+    color: rgb(225, 208, 195);
+    font-size: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.place-an-order h3 {
+    padding: 0;
+    margin: 0;
+    color: rgb(225, 208, 195);
+    font-size: 15px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    transition: 0.2s ease-in-out;
+}
+
+.place-an-order div:hover > * {
+    color: white;
+    border-color: white;
+}
+
+.place-an-order div:hover {
+    border-color: white;
+}
+
+.copy-form {
+    color: rgb(225, 208, 195);
+    width: 50vw;
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copy-form h3 {
+    margin: 0;
+    text-align: left;
+    user-select: all;
+}
 
 
 
@@ -522,10 +568,10 @@ h3.instructions, h1.instructions {
 }
 
 .section-pricing {
-    background-color:rgb(200, 205, 177);
+    background-color:rgb(225, 208, 195);
 }
 
-.section-pricing h1, h2, h3, h5 {
+.section-pricing h1, h2, h3, h5 p {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -543,6 +589,56 @@ h3.instructions, h1.instructions {
     text-align: center;
 }
 
+.section-pricing div.step-container {
+    display: inline-block;
+    width: 340px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.section-pricing .purchase-steps h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1vh;
+}
+
+.section-pricing .purchase-steps h3,.section-pricing .purchase-steps p {
+    color: rgb(225, 208, 195);
+    margin: 0;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    font-family: 'Dosis', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* when screen size is phone size */
+@media screen and (max-width:   1000px) {
+
+    .section-pricing .purchase-steps p {
+      width: 30vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+@media screen and (max-width:   600px) {
+
+    .section-pricing .purchase-steps p {
+      width: 70vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
 .section-pricing div.instructions-and-chart {
     background-color: black;
     color: white;
@@ -552,7 +648,7 @@ h3.instructions, h1.instructions {
 }
 
 .section-pricing h1.instructions {
-    color: rgb(200, 205, 177);
+    color: rgb(225, 208, 195);
     font-size: 80px;
 }
 
@@ -575,7 +671,7 @@ h3.instructions, h1.instructions {
 
 .section-pricing a.paypal-icon:hover {
     font-size: 80px;
-    color: rgb(200, 205, 177);
+    color: rgb(225, 208, 195);
 }
 
 .row {
@@ -583,7 +679,6 @@ h3.instructions, h1.instructions {
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
-    
     transition: 0.5s ease-in-out;
 }
 
@@ -609,7 +704,7 @@ h3.instructions, h1.instructions {
 }
 
 .column-1 h1.price-tag, .column-2 h1.price-tag, .column-3 h1.price-tag {
-    color: rgb(200, 205, 177);
+    color: rgb(225, 208, 195);
     text-decoration: underline;
     margin: 0;
 }
@@ -628,12 +723,13 @@ h3.instructions, h1.instructions {
 }
 
 .exclusive-note {
-    color: rgb(200, 205, 177);
+    color: rgb(225, 208, 195);
     font-family: 'Dosis', sans-serif;
     width: 50vw;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20vh;
 }
 
 .body-browse .exclusive-note {
@@ -649,161 +745,16 @@ h3.instructions, h1.instructions {
 }
 
 .column-1:hover {
-    border: 3px solid rgb(200, 205, 177);
+    border: 3px solid rgb(225, 208, 195);
 }
 
 .column-2:hover {
-    border: 3px solid rgb(200, 205, 177);
+    border: 3px solid rgb(225, 208, 195);
 }
 
 .column-3:hover {
-    border: 3px solid rgb(200, 205, 177);
+    border: 3px solid rgb(225, 208, 195);
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-      width: 80%;
-}
-
-    .player {
-        width: 85vw;
-}
-
-    nav ul * {
-        letter-spacing: 3px;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CHECKOUT */
-
-.section-checkout h1 {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    color: rgb(200, 205, 177);
-    margin: 0;
-    font-size: 80px;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-}
-
-.cart {
-    overflow: hidden;
-    border: 3px solid rgb(200, 205, 177);
-    border-radius: 30px;
-    margin-top: 5vh;
-    width: 40vw;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.cart .shopping-cart-items-and-icon {
-    padding: 20px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    letter-spacing: 5px;
-    font-weight: lighter;
-    color: rgb(200, 205, 177);
-}
-
-.cart ul {
-    background-color: rgb(200, 205, 177);
-    margin: 0;
-    padding-left: 0;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    list-style: none;
-    text-align: left;
-    /* border: 1px solid rgb(200, 205, 177); */
-}
-
-.cart ul .added-item {
-    width: 35vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cart li {
-    border: 1px solid red;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 2px;
-    font-size: 15px;
-    overflow: hidden;
-    
-}
-
-.item-div-left {
-    float: left;
-}
-
-.item-div-left .item-name {
-    margin-left: 1vw;
-}
-
-.item-div-right {
-    float: right;
-}
-
-.item-div-right * {
-    display: inline-block;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-}
-
-.item-div-right i {
-    color: black;
-}
-
-.view-track, .item-div-right i {
-    border: 1px solid red;
-}
-
-.cart .checkout-button {
-    text-decoration: none
-}
-
-.cart .checkout-button h3 {
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 2px;
-    font-size: 20px;
-    width: 20vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    border: 1px solid white;
-    transition: 0.2s ease-in-out;
-}
-
-.cart .checkout-button h3:hover {
-    background-color: rgb(200, 205, 177);
-    border-color: rgb(200, 205, 177);
-    color: black;
-}
-
-
-
 
 
 
@@ -829,7 +780,7 @@ h3.instructions, h1.instructions {
 /* CONTACT ME SECTION */
 
 .section-home div.contact-info {
-    background-color:rgb(200, 205, 177);
+    background-color:rgb(225, 208, 195);
 }
 
 .section-home h1.reach-out-on {
@@ -849,7 +800,7 @@ div.contact-info {
 
 .body-home .contact-info {
     padding-top: 5vh;
-    background-color: rgb(200, 205, 177);
+    background-color: rgb(225, 208, 195);
 }
 
 .body-home .contact-info a, .body-home .reach-out-on {
@@ -877,7 +828,7 @@ div.social-media-icons {
 }
 
 div.social-media-icons a {
-    color:rgb(200, 205, 177);
+    color:rgb(225, 208, 195);
     letter-spacing: 10px;
     transition: 0.3s;
 }

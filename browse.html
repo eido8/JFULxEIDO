@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- css link -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- JS link -->
+    <script src="script.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Guntur&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    
 </head>
 <body class="body-browse">
     <nav>
@@ -25,52 +29,71 @@
             <li><a href="browse.html" class="nav-browse">| BROWSE</a></li>
             <li><a href="pricing.html">| PRICING</a></li>
             <!-- <li><a href="index.html">| JFUL website (incomplete)</a></li> -->
-            <li><a href="checkout.html">| MY CART <i class="fas fa-shopping-cart"></i></a></li>
+            <!-- <li><a href="checkout.html">| MY CART <i class="fas fa-shopping-cart"></i></a></li> -->
+            <li><a href="contact.html">| CONTACT <i class="fas fa-headset"></i></a></li>
         </ul>
     </nav>
 
     <section class="section-browse">
-        <h1 class="jful-x-eido-collection">AVAILABLE TRACKS</h1>
+        <h1 class="full-collection">AVAILABLE TRACKS</h1>
         <h3 class="browse-thru">Browse thru. Also on Spotify & Apple Music</h3>
         <div class="player">
 
             <div class="iframe-container">
                 <div id="meant-to-be-container"><iframe src="https://open.spotify.com/embed/track/0bWpAvfB8cDpNl3gaDsxg5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                <div class="iframe-overlay" id="meant-to-be-overlay">
-                    <h3 class="track-title">Meant To Be</h3>
-                    <a><h3 class="select-pricing" id="mtb-basic">BASIC | $29.99</h3></a>
-                    <a><h3 class="select-pricing" id="mtb-standard">STANDARD | $49.99</h3></a>
-                    <a><h3 class="select-pricing" id="mtb-exclusive">EXCLUSIVE | $129.99</h3></a>
-                    <a href="pricing.html"><h5 class="review-pricing">Review Pricing</h5></a>
-                </div>
-                <div class="iframe-buttons"><a><h3 class="add-to-cart" id="add-meant-to-be"><i class="fas fa-plus"></i></h3></a><a href="checkout.html"><h3 class="view-cart"><i class="fas fa-shopping-cart"></i></h3></a></div>
             </div>
 
             <div class="iframe-container">
                 <div id="you-want-container"><iframe src="https://open.spotify.com/embed/track/5cAAkStANBoFwZh3iFpaYP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                <div class="iframe-overlay" id="you-want-overlay">
-                    <h3 class="track-title">You Want</h3>
-                    <a><h3 class="select-pricing" id="yw-basic">BASIC | $29.99</h3></a>
-                    <a><h3 class="select-pricing" id="yw-standard">STANDARD | $49.99</h3></a>
-                    <a><h3 class="select-pricing" id="yw-exclusive">EXCLUSIVE | $129.99</h3></a>
-                    <a href="pricing.html"><h5 class="review-pricing">Review Pricing</h5></a>
-                </div>
-                <div class="iframe-buttons"><a><h3 class="add-to-cart" id="add-you-want"><i class="fas fa-plus"></i></h3></a><a href="checkout.html"><h3 class="view-cart"><i class="fas fa-shopping-cart"></i></h3></a></div>
             </div>
 
             <div class="iframe-container">
                 <div id="city-sounds-container"><iframe src="https://open.spotify.com/embed/track/5pOkI7yhGvUnHiz8OvVbFO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                <div class="iframe-overlay" id="city-sounds-overlay">
-                    <h3 class="track-title">City Sounds</h3>
-                    <a><h3 class="select-pricing" id="cs-basic">BASIC | $29.99</h3></a>
-                    <a><h3 class="select-pricing" id="cs-standard">STANDARD | $49.99</h3></a>
-                    <a><h3 class="select-pricing" id="cs-exclusive">EXCLUSIVE | $129.99</h3></a>
-                    <a href="pricing.html"><h5 class="review-pricing">Review Pricing</h5></a>
-                </div>
-                <div class="iframe-buttons"><a><h3 class="add-to-cart" id="add-city-sounds"><i class="fas fa-plus"></i></h3></a><a href="checkout.html"><h3 class="view-cart"><i class="fas fa-shopping-cart"></i></h3></a></div>
             </div>
         </div>
-        <h3 class="exclusive-note">*tracks purchased with exclusive plan will be taken down from eido's Spotify, Apple Music, and every music platform it was released in as the ownership has been given to the buyer.</h3>
+        <!-- <h3 class="exclusive-note">*tracks purchased with exclusive plan will be taken down from eido's Spotify, Apple Music, and every music platform it was released in as the ownership has been given to the buyer.</h3> -->
+        <div class="purchase-instruction-container">
+            <h1 class="instructions">HOW TO PURCHASE</h1>
+            <div class="purchase-steps">
+                <div class="step-container">
+                    <h1>Step 1</h1>
+                    <h3><i class="fas fa-search"></i></h1>
+                    <p>Find the tracks you would like to purchase in the browse tab. Keep in mind which pricing plan you would like to purchase the desired track. <a href="pricing.html" class="review-pricing" style="pointer-events: all;">Review pricing information</a><br><br></p>    
+                </div>
+                <div class="step-container">
+                    <h1>Step 2</h1>
+                    <h3><i class="fas fa-pen"></i></h3>
+                    <p>Click the "Request an Order" button below to send me an email with the title of tracks you want to purchase and their corresponding choice of plan. *Please use the format below in your email!</p>    
+                </div>
+                <div class="step-container">
+                    <h1>Step 3</h1>
+                    <h3><i class="fab fa-paypal"></i></h3>
+                    <p>After requesting the order, an email will be replied to you within 24 hours with the payment info. Once your payment has been verified, you will receive a email with appropriate purchased tracks.</p>    
+                </div>
+            </div>
+
+            <div class="place-an-order">
+                <a href="mailto:eidoadeproduction@gmail.com">
+                    <div><h1>Request an Order</h1><h3>*Please copy and use the email form below!</h3></div>
+                </a>
+            </div>
+            <h3 class="form">Form</h3>
+            <div class="copy-form">
+                <h3>Your Full Name:</h3>
+                <br>
+                <h3>Email Address:</h3>
+                <br>
+                <h3>Country:</h3>
+                <br>
+                <h3>Beat name with corresponding choice of pricing plan (ex: "Beat A" with Premium Plan):</h3>
+                <br>
+                <h3>Coupon code (if any):</h3>
+                <br>
+                <h3>Payment Method (PayPal or Card (MasterCard and Visa) by PayPal):</h3>
+                <br>
+            </div>
+        </div>
+
         <div class="contact-info">
             <h1 class="reach-out-on">REACH OUT ON</h1>
             <div class="social-media-icons">
@@ -85,7 +108,7 @@
         </div>
     </section>
     
-    <!-- JS link -->
-    <script src="script.js"></script>
+    
+    
 </body>
 </html>
