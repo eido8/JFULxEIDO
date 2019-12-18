@@ -1,3 +1,19 @@
+// CHECK REQUIRED FIELDS
+
+function formcheck() {
+    var fields = $(".ss-item-required")
+          .find("select, textarea, input").serializeArray();
+    
+    $.each(fields, function(i, field) {
+      if (!field.value)
+        alert(field.name + ' is required');
+     }); 
+    console.log(fields);
+  }
+
+
+
+
 // BROWSE
 // TOGGLE TRACK PRICING
 document.getElementById("add-meant-to-be").addEventListener("click", toggleMTB);
@@ -16,10 +32,7 @@ function toggleMTB() {
     }
 }
 
-
-
-
-
+document.querySelector(".select-pricing").addEventListener("click", checkPlan);
 
 
 
@@ -62,3 +75,5 @@ function toggleCS() {
 }
 
 
+
+  
